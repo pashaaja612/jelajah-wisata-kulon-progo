@@ -2,7 +2,7 @@
 -- (misalnya kartu di beranda masih menampilkan deskripsi lama).
 -- Aman: tidak menghapus database, tabel, kolom, maupun data pemesanan.
 USE db_wisata;
-x
+
 ALTER TABLE paket_wisata ADD COLUMN IF NOT EXISTS destinasi TEXT NULL AFTER deskripsi;
 
 INSERT IGNORE INTO paket_wisata (id, nama_paket, deskripsi, gambar) VALUES
