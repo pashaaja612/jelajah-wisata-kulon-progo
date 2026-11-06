@@ -17,7 +17,7 @@ $judul = isset($judul) ? $judul : 'Jelajah Wisata Kulon Progo';
         </div>
         <?php
         $headerImg = 'img/header.jpg';
-        foreach (['img/header.jpg', 'img/sungai_mudal.jpg', 'img/kalibiru.jpg'] as $kandidat) {
+        foreach (['img/header.jpg'] as $kandidat) {
             $cek = gambar($kandidat);
             if (file_exists(__DIR__ . '/' . $cek)) { $headerImg = $cek; break; }
         }
